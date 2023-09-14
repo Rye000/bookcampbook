@@ -1,0 +1,84 @@
+.focusBook {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  overflow: hidden;
+  bottom: 30%;
+  right: 15%;
+}
+@media screen and (max-width: 500px) {
+  .focusBook {
+    right: 5%; /* 在小於 400px 寬度時將 right 設置為 20% */
+  }
+}
+
+
+.focusBook img {
+  width: 300px;
+}
+/* @media screen and (max-width: 500px) {
+  .focusBook img {
+    width: 220px;
+  }
+} */
+
+.imgSpace {
+  height: 350px;
+}
+
+.focusContent {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  background-color: var(--main-purple);
+  position: relative;
+  border-radius: 5px;
+  padding: 2rem;
+  color: white;
+  transition: 0.4s;
+}
+
+.focusContent:hover {
+  background-color: var(--main-colorpurple);
+}
+
+.focusContent::before {
+  content: '';
+  position: absolute;
+  width: 83%;
+  height: 30px;
+  top: -22%;
+  right: 8.5%;
+  z-index: -1;
+  background: #874be6;
+  transform: perspective(0.5em) rotateX(5deg);
+}
+
+.goBtnPosition {
+  top: 5%;
+  right: 18%;
+}
+@media screen and (max-width: 500px) {
+  .goBtnPosition {
+    right: 35%; /* 在小於 400px 寬度時將 right 設置為 20% */
+  }
+}
+
+
+.leftbton {
+  position: relative;
+}
+.leftbton button:nth-of-type(1) { 
+  position: absolute;
+  top: 82%;
+  left: -11%;
+}
+
+.leftbton button:nth-of-type(2) { 
+  position: absolute;
+  top:82%;
+  left: 96%;
+}
+
+
+
